@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  
+    <script>
+      function displayMenu(){
+    var link=document.getElementById("main-nav");
+    link.classList.toggle("responsive");
+}
+    </script>
+  </head>
+  <body>
+    <header class="main-header">
+      <div id="main-nav" class="container ">
+        <a href="#" class="header-logo">MovieApp</a>
+        <div class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a href="#">Filmler</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Diziler</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="btn btn-secondary">Login</a>
+            </li>
+            <li class="main-nav__item"><a href="#" onclick="displayMenu()">
+              <i class="fa fa-bars"></i></a>
+            
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="showcase">
+        <div class="showcase-content">
+          <h2>Welcome</h2>
+          <h3>
+            Millions of movies, TV shows and people to discover. Explore now.
+          </h3>
+        </div>
+      </section>
+      <section id="how-it-works">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title">How It Works</h2>
+            <p>
+              We will show you step by step how to start watching your favorite
+              movies & tv shows starting now!
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-3 icon-box">
+              <i class="fas fa-sign-in-alt fa-3x"></i>
+              <h3>Register</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus alias dicta, placeat soluta cupiditate maxime eligendi
+                maiores ducimus voluptatem eius itaque corporis, quasi deserunt
+                necessitatibus id consequuntur quis quos. Officiis!
+              </p>
+            </div>
+            <div class="col-3 icon-box">
+              <i class="fab fa-buffer fa-3x"></i>
+              <h3>Choose A Plan</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatem repudiandae vero distinctio pariatur animi esse
+                sapiente commodi magni natus beatae, at repellendus similique
+                est atque eligendi. Voluptatem quam alias in.
+              </p>
+            </div>
+            <div class="col-3 icon-box">
+              <i class="far fa-smile fa-3x"></i>
+              <h3>Enjoy Movies</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                commodi quas debitis vitae molestias ipsa consequatur enim
+                architecto rerum odit natus molestiae, porro, aliquam ratione ab
+                ipsum quos ut eius.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features">
+        <div class="row">
+          <div class="col-2 features__left"></div>
+          <div class="col-2 features__right">
+            <h2>Watch all Movies & TV Shows once they get released!</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              ratione eligendi. Impedit, et, aliquid obcaecati fuga ipsa
+              inventore illum necessitatibus dolore, id accusantium similique
+              nostrum minima saepe neque? Mollitia, harum. Lorem, ipsum dolor
+              sit amet consectetur adipisicing elit. Officia enim laborum quia
+              laboriosam esse, incidunt officiis id modi quae odio adipisci qui
+              neque quisquam in veritatis harum, eaque, ipsum iste.
+            </p>
+            <a href="#" class="btn btn-primary">View Features</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="plans">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title">Become a Premium Member</h2>
+            <div class="col-3 plan">
+              <div class="inner-plan">
+                <h2>Free</h2>
+                <h3>$0/Month</h3>
+                <ul class="plan__features">
+                  <li>HD available</li>
+                  <li>Unlimited Movies and TV shows</li>
+                  <li>Watch on your phone & tablet</li>
+                  <li>Download and watch offline</li>
+                  <li>Screens you can watch</li>
+                  <li>First Month Free</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Choose plan</a>
+              </div>
+            </div>
+            <div class="col-3 plan">
+              <div class="inner-plan recommended_plan">
+                <h2 class="plan__badge">Reccomended</h2>
+                <h2>Basic</h2>
+                <h3>$9.99/Month</h3>
+                <ul class="plan__features">
+                  <li>HD available</li>
+                  <li>Unlimited Movies and TV shows</li>
+                  <li>Watch on your phone & tablet</li>
+                  <li>Download and watch offline</li>
+                  <li>Screens you can watch</li>
+                  <li>First Month Free</li>
+                </ul>
+                <a href="#" class="btn btn-secondary">Choose plan</a>
+              </div>
+            </div>
+            <div class="col-3 plan">
+              <div class="inner-plan">
+                <h2>Premium</h2>
+                <h3>$19.99/Month</h3>
+                <ul class="plan__features">
+                  <li>HD available</li>
+                  <li>Unlimited Movies and TV shows</li>
+                  <li>Watch on your phone & tablet</li>
+                  <li>Download and watch offline</li>
+                  <li>Screens you can watch</li>
+                  <li>First Month Free</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Choose plan</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="counters">
+        <div class="row counter">
+          <div class="col-3">
+            <span class="counter_items">974</span>
+            <h4>Movies</h4>
+          </div>
+          <div class="col-3">
+            <span class="counter_items">456</span>
+            <h4>Tv Shows</h4>
+          </div>
+          <div class="col-3">
+            <span class="counter_items">976</span>
+            <h4>Users</h4>
+          </div>
+        </div>
+      </section>
+
+      <section id="movies">
+        <h2 class="section-title">Latest Movies & TV Shows </h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 card-container">
+                        <div class="card">
+                            <img class="card-image img-fluid" src="/images/recep1.jpg" alt="">
+                            <div class="card-body">
+                                <h2>Star Wars</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum porro dolore expedita distinctio quas in.</p>
+                                <p>
+                                    <button class="btn btn-primary">Details</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card ">
+                            <img class="card-image img-fluid" src="/images/recep1.jpg" alt="">
+                            <div class="card-body">
+                                <h2>Star Wars</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum porro dolore expedita distinctio quas in.</p>
+                                <p>
+                                    <button class="btn btn-primary">Details</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 card-container">
+                        <div class="card ">
+                            <img class="card-image img-fluid" src="/images/recep1.jpg" alt="">
+                            <div class="card-body">
+                                <h2>Star Wars</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum porro dolore expedita distinctio quas in.</p>
+                                <p>
+                                    <button class="btn btn-primary">Details</button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <ul class="">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Contact</a></li>
+
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul class="social">
+              <li><a href="" class="fab fa-facebook"></a></li>
+              <li><a href="" class="fab fa-twitter"></a></li>
+              <li><a href="" class="fab fa-instagram"></a></li>
+              
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </main>
+  </body>
+</html>

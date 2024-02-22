@@ -1,0 +1,302 @@
+@import url(base.css);
+@import url(buton.css);
+.main-header{
+    background-color: #720455;
+    padding: 1rem 1.6rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 7.6rem);
+   
+}
+
+.main-nav__items{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav__item{
+    display: inline-block;
+    margin: 0rem 0.6rem;
+    color: #fff;
+}
+
+.main-nav__item a,.header-logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-nav__item a:hover,.header-logo:hover {
+   color: #030637;
+}
+.main-nav__item:last-child{
+    display: none;
+}
+
+@media(max-width:600px){
+    .main-nav__item{
+        display: none;
+    }
+    .main-nav__item:last-child{
+        display: block;
+    }
+    .responsive .main-nav{
+        display: block;
+    }
+
+    .responsive .main-nav__item{
+        display: block;
+        text-align: left;
+        margin:1rem 0;
+    }
+
+    .responsive .main-nav__item:last-child{
+        position: absolute;
+        right: 40px;
+        top: 6px;
+    }
+    
+}
+
+#showcase{
+    height: 40vh;
+    background-image: url(/images/showcase.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.showcase-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: rgba(46, 76, 109, 0.3);
+    width:60%;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+#how-it-works{
+    text-align: center;
+    padding: 1rem;
+}
+
+.section-title{
+    color: #720455;
+    font-size: 3rem;
+}
+
+.icon-box{
+    padding: 1rem;
+}
+
+.icon-box i{
+    color: #720455;
+}
+.icon-box h3{
+    color: #720455;
+    font-size: 2.4rem ;
+}
+
+.features__left{
+    background-image: url(/images/features.jpeg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.features__right{
+    background-color: #910A67;
+    color: #fff;
+    padding: 3rem;
+}
+
+.features__left,.features__right{
+    height: 40rem;
+}
+
+.features-right h3{
+    font-size: 3rem;
+}
+
+#plans{
+    text-align: center;
+}
+.plan__features{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.plan__features li{
+    margin-bottom: 1rem;
+}
+
+.inner-plan{
+    background-color: #720455;
+    color: #fff;
+    padding: 2.5rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.7rem 2.9rem 0rem rgba(100, 100, 111, 0.2);
+   
+}
+
+.inner-plan:hover{
+    box-shadow: 0rem 0.7rem 2.9rem 0.5rem #720455;
+}
+
+.plan{
+    padding: 0.5rem;
+    
+}
+
+.plan__badge{
+    background-color: #fff;
+    color: #720455;
+    padding: 0.8rem;
+}
+
+.recommended_plan{
+    background-color: #3C0753;
+}
+
+
+.counter{
+    background-color: #720455;
+    text-align: center;
+    color: #fff;
+    padding: 5rem;
+}
+
+.counter_items{
+    font-size: 3rem;
+    font-weight: 50rem;
+    color: #fff;
+}
+
+.card-image{
+    max-height: 30rem;
+}
+
+.img-fluid{
+    width: 100%;
+}
+
+
+.card{
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 1rem 1rem 4rem rgba(52,58,64,0.1);
+    transition: 0.6s;
+}
+
+.card:hover{
+    transform: translateY(-1rem);
+}
+.card-container{
+    padding: 1rem;
+}
+
+.card-body{
+    padding: 1.5rem;
+}
+
+
+#movies h2{
+    text-align: center;
+}
+
+footer{
+    background-color: #720455;
+    padding: 3rem;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li{
+    display: inline;
+    margin: 0.6rem;
+}
+
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.social{
+    text-align: right;
+}
+
+.fa-twitter{
+    color: aqua;
+}
+.fa-facebook{
+    color:aqua;
+}
+.fa-instagram{
+    
+    color: #fff;
+}
+
+
+
+ /*tablets */
+ @media (min-width:576px){
+    #showcase{
+        
+        height: 50vh;  
+    }
+   
+}
+
+/*tablets */
+@media (min-width:768px){
+    #showcase{
+        
+        height: 60vh;
+    }
+}
+
+ /*desktop*/
+ @media (min-width:992px){
+    #showcase{
+       
+        background-attachment: fixed;
+        height: 70vh;
+    }
+    
+ }
+   /*large-desktop*/
+   @media (min-width:1200px){
+    
+    #showcase{
+        background-attachment: fixed;
+        height: 80vh;
+    }
+ }
+   /*xlarge-desktop*/
+   @media (min-width:1400px){
+    #showcase{
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    
+ }
